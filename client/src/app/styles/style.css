@@ -1,0 +1,187 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*
+   Default font
+*/
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*
+   Background color 
+*/
+.bg-primary-dark {
+    background-color: #17005d;
+}
+
+.bg-primary-light {
+    background-color: #7a55ff;
+}
+
+.bg-secondary-dark {
+    background-color: #59090c;
+}
+
+.bg-secondary-light {
+    background-color: #C2D9FF;
+}
+
+.bg-light {
+    background-color: #f4f0ff;
+}
+
+
+
+/*
+   Text color 
+*/
+.text-primary-dark {
+    color: #130342;
+}
+
+.text-primary-light {
+    color: #7752FE;
+}
+
+.text-secondary-dark {
+    color: #0350EA;
+}
+
+.text-secondary-light {
+    color: #C2D9FF;
+}
+
+.text-light {
+    color: #DAE8FF;
+}
+
+/*
+   Disabling the number input up and down arrows
+*/
+/* Chrome, Safari, Edge, Opera */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+/* 
+  =======================================
+  PrimeReact pagination styles 
+  =======================================
+*/
+
+/* Paginator Container */
+.p-paginator {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    list-style-type: none !important;
+    padding: 0;
+    margin: 30px 0;
+}
+
+/* Active Page Style */
+.p-paginator .p-paginator-pages .p-paginator-page.p-highlight {
+    background-color: #7a55ff !important;
+    color: #fff !important;
+    border-radius: 100%;
+    padding: 20px;
+    width: 30px;
+    height: 30px;
+    margin: 0px 5px;
+}
+
+/* Inactive Page Style */
+.p-paginator .p-paginator-pages .p-paginator-page {
+    background-color: #e5e5e5 !important;
+    color: #808080 !important;
+    border-radius: 100%;
+    padding: 20px;
+    width: 30px;
+    height: 30px;
+    margin: 0px 5px;
+}
+
+/* Next and Previous Links */
+.p-paginator .p-paginator-next,
+.p-paginator .p-paginator-prev {
+    color: #464646 !important;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 8px 15px;
+    margin: 0 5px;
+}
+
+/* Disabled Next and Previous Links */
+.p-paginator .p-paginator-next.p-disabled,
+.p-paginator .p-paginator-prev.p-disabled {
+    color: #929292 !important;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 8px 15px;
+    margin: 0 5px;
+    cursor: not-allowed;
+    display: block;
+}
+
+/* Page Count Information Style */
+.p-paginator .p-paginator-current {
+    font-size: 14px;
+    color: #444;
+}
+
+/* Customized Page Report Template */
+.p-paginator .p-paginator-current::after {
+    content: " of {totalRecords}" !important;
+}
+
+/* Responsive Styles for Small Screens */
+@media only screen and (max-width: 600px) {
+    .p-paginator {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .p-paginator .p-paginator-next,
+    .p-paginator .p-paginator-prev {
+        margin-top: 10px;
+        /* Add margin between buttons on small screens */
+    }
+}
+
+/* 
+  =======================================
+  Image floating animation styles
+  =======================================
+*/
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translate(10px, 20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.animate-float {
+    animation: float 3s ease-in-out infinite;
+}
+
+
