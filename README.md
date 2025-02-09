@@ -9,9 +9,6 @@ The default admin credentials are:
 - **Email**: `admin@movieapp.com`
 - **Password**: `Password@123`
 
-### Important Note:
-These credentials are for **testing purposes only**. Do not use them in a production environment. If you want to change the admin credentials, modify the seed logic in the application's startup script.
-
 ## Table of Contents
 
 - [About the Project](#about-the-project)
